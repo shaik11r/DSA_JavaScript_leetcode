@@ -14,3 +14,13 @@ console.log(arr3);
 const myFish = ["angel", "clown", "mandarin", "sturgeon"];
 const removed = myFish.splice(2);
 console.log(removed);
+
+
+let arr4=[1,2,3,4];
+let i=arr4.length;
+while(i>0){
+    let j=i*i;
+    arr4.unshift(j);
+    i--;
+}
+console.log(arr4);
