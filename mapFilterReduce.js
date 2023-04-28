@@ -10,9 +10,10 @@ const output2=arr.map(function(x){
 const output3=arr.map(x=>x*x*x);//arrow function
 
 console.log(output);
-console.log(output2);
-console.log(output3);
 
+console.log(output2);
+
+console.log(output3);
 /**
  * Filter function;
  */
@@ -33,3 +34,4 @@ newstr=str.split(' ').reverse();
 console.log(newstr.filter((val)=>{
     if(val!==" ")return val
 }).join(' '));
+

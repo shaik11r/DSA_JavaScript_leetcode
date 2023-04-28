@@ -9,6 +9,7 @@ async function theexample(){
     console.log('new promise');
     await delay(4000);
     console.log('called await no wait for 10sec')
+    return "hi"
 }
 theexample().then(result=>{
     console.log(result);
