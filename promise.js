@@ -32,9 +32,8 @@ function doublenumber(value){
     })
     return myPromise;
 }
-checknumber(6)
-.then((result)=>{
-    console.log(result)
+checknumber(6).then((result)=>{
+console.log(result)
 return doublenumber(6)}).
 then(result=>console.log(result))
 .catch(result=>console.log(result));
