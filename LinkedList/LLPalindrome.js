@@ -33,7 +33,7 @@ const mylist = new LinkedList();
 mylist.append(1);
 mylist.append(2);
 mylist.append(3);
-mylist.append(3)
+mylist.append(3);
 mylist.append(2);
 mylist.append(1);
 console.log(linkedListPalindrome(mylist.head));

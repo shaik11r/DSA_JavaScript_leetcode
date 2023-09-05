@@ -52,14 +52,18 @@ mylist.append(6);
 mylist.createCycle(1);
 console.log(detectCycleInLinkedList(mylist.head))
 function detectCycleInLinkedList(head){
+    if(head==null)return null;
     let slow=head;
-    let fast=head.next;
-    while(slow&&fast){
+    let fast=head;
+    while(fast.next!=null&&fast.next.next!=null){
         if(slow==fast){
-            return true;
+            slow=head;
+            while(slow!=fast){
+                slow=slow.next;
+                fast=fast.next;
+            }
+            return slow;
         }
-        slow=slow.next;
-        fast=fast.next.next;
     }
-    return false;
+    return null;
 }
