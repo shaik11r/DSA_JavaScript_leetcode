@@ -5,12 +5,15 @@ This repository contains my solutions and implementations for various LeetCode p
 ## Topics Covered
 
 1. **Dynamic Programming**
+
    - Description: Solutions and implementations related to dynamic programming problems.
 
 2. **LinkedList**
+
    - Description: Solutions and implementations related to LinkedList data structure problems.
-   - 
+
 3. **JavaScript**
+
    - Description: JavaScript solutions and implementations for LeetCode and DSA problems.
 
 4. **Recursion**
