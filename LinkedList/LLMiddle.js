@@ -22,7 +22,7 @@ class LinkedList {
     return;
   }
 }
-let myList=new LinkedList();
+let myList = new LinkedList();
 myList.append(1);
 myList.append(2);
 myList.append(3);
@@ -35,16 +35,21 @@ myList.append(5);
  * 1,2,3
  * here 1,1
  * 2,3 now false
+ *
+ * 1,1
+ * 2,3
+ * 3,5
+ * 4,6 so stop here
  */
-findMiddle(myList.head);//3;
-function findMiddle(head){
-    let slow=head;
-    let fast=head;
-    while(fast.next!==null&& fast.next.next!==null){
-        slow=slow.next;
-        fast=fast.next.next;
-    }
-    console.log(slow.data);
-    return;
+//slow,fast pointer approach :)
+findMiddle(myList.head); //3;
+function findMiddle(head) {
+  let slow = head;
+  let fast = head;
+  while (fast !== null && fast.next !== null) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  console.log(slow.data);
+  return;
 }
-
