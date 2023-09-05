@@ -1,4 +1,4 @@
-const promise = new Promise(function hi(resolve,reject,){
+const promise = new Promise(function hi(resolve,reject){
     let isSucessful=true;
     if(isSucessful){
         resolve('hi im resolved')
