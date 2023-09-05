@@ -45,7 +45,7 @@ function reverseList(head) {
     curr = temp;
   }
   let current = prev;
-  while (current != null) {
+  while (current !== null) {
     console.log(current.data);
     current = current.next;
   }
