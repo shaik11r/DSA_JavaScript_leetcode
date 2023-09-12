@@ -20,6 +20,7 @@ root.left.right=rightChild2
 //preorder root left right;
 //postorder left right root;
 inorder(root);
+preorder(root);
 function inorder(temp){
     if(temp==null){
         return;
@@ -27,4 +28,12 @@ function inorder(temp){
     inorder(temp.left);
     console.log(temp.value);
     inorder(temp.right);
+}
+function preorder(temp){
+    if(temp==null){
+        return;
+    }   
+    console.log(temp.value);
+    preorder(temp.left);
+    preorder(temp.right);
 }
