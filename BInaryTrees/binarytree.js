@@ -19,8 +19,12 @@ root.left.right=rightChild2
 //inorder left root right;
 //preorder root left right;
 //postorder left right root;
+console.log("inrorder traversal : ")
 inorder(root);
+console.log("preorder traversal : ")
 preorder(root);
+console.log("postorder traversal : ")
+postorder(root);
 function inorder(temp){
     if(temp==null){
         return;
@@ -36,4 +40,12 @@ function preorder(temp){
     console.log(temp.value);
     preorder(temp.left);
     preorder(temp.right);
+}
+function postorder(temp){
+    if(temp==null){
+        return;
+    }   
+    postorder(temp.left);
+    postorder(temp.right);
+    console.log(temp.value);
 }
