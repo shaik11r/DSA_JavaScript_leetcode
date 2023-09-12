@@ -49,3 +49,23 @@ function postorder(temp){
     postorder(temp.right);
     console.log(temp.value);
 }
+console.log("level order traversal or BFS")
+levelOrderTraversal(root);
+function levelOrderTraversal(root){
+    let ans=[];
+    if(root==null)return ans;
+    let queue=[];
+    queue.push(root);
+    while(queue.length>0){
+        let size=queue.length;
+        let level=[];
+        for(let i=0;i<size;i++){//1 2,3 so in queue 45 for 2 for 3 67 so 4567
+            let node=queue.shift();//front node will come;
+            if(node.left!=null)queue.push(node.left);
+            if(node.right!=null)queue.push(node.right);
+            level.push(node.value)
+        }
+        ans.push(level);
+    }
+    console.log(ans);
+}
